@@ -10,11 +10,23 @@ Step 2: Make a input .css and paste the below code in it.
 @import "tailwindcss";
 ```
 
-Step 3: Run this command in terminal.
+Step 3: Make a tailwind.config.js and paste the below code in it.
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./*.html"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+Step 4: Run this command in terminal.
 ```
 npx @tailwindcss/cli -i input.css -o output.css --watch
 ```
-Step 4: Link output.css to html.
+Step 5: Link output.css to html.
 
 
 
